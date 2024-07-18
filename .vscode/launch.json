@@ -5,11 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "TheChannelCompany App",
+            "name": "TheChannelCompany App - Run Server",
             "type": "debugpy",
             "request": "launch",
             "args": [
                 "runserver"
+            ],
+            "django": true,
+            "autoStartBrowser": false,
+            "program": "${workspaceFolder}/src/run.py"
+        },
+        {
+            "name": "TheChannelCompany App - Run migrations",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "migrate"
             ],
             "django": true,
             "autoStartBrowser": false,
