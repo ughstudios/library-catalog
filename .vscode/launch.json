@@ -25,6 +25,17 @@
             "django": true,
             "autoStartBrowser": false,
             "program": "${workspaceFolder}/src/run.py"
-        }
+        },
+        {
+            "name": "TheChannelCompany App - Make Migrations",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "makemigrations", "thechannelcompany"
+            ],
+            "django": true,
+            "autoStartBrowser": false,
+            "program": "${workspaceFolder}/src/run.py"
+        },
     ]
 }
