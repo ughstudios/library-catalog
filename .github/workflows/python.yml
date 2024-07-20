@@ -21,3 +21,5 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
+    - name: Python flake8 Lint
+      uses: py-actions/flake8@v2.3.0
