@@ -35,13 +35,13 @@ def delete_file(path: str) -> None:
 
 
 @receiver(post_delete, sender=Book)
-def delete_cover_on_delete(sender, instance, **kwargs) -> None:
+def delete_cover_on_delete(sender, instance, **kwargs) -> None:  # pylint: disable=unused-argument
     if instance.cover:
         delete_file(str(instance.cover.path))
 
 
 @receiver(pre_save, sender=Book)
-def delete_old_cover_on_update(sender, instance, **kwargs) -> None:
+def delete_old_cover_on_update(sender, instance, **kwargs) -> None:  # pylint: disable=unused-argument
     if not instance.pk:
         return
 
