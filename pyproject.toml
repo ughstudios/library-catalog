@@ -24,6 +24,7 @@ ignore_missing_imports = true
 check_untyped_defs = true
 
 [tool.pylint.'MESSAGES CONTROL']
+max-line-length = 200
 disable = [
     "import-error",  # E0401
     "missing-module-docstring",  # C0114
@@ -31,6 +32,7 @@ disable = [
     "missing-function-docstring",  # C0116
     "invalid-name"  # C0103
 ]
+
 
 [tool.flake8]
 max-line-length = 200
