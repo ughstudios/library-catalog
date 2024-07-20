@@ -15,6 +15,10 @@ markdown = "^3.6"
 django-filter = "^24.2"
 pillow = "^10.4.0"
 
+[tool.poetry.group.dev.dependencies]
+flake8-pyproject = "^1.2.3"
+flake8 = "^7.1.0"
+
 [tool.mypy]
 ignore_missing_imports = true
 check_untyped_defs = true
@@ -25,13 +29,10 @@ disable = [
     "missing-module-docstring",  # C0114
     "missing-class-docstring",   # C0115
     "missing-function-docstring",  # C0116
-    "invalid-name", # C0103   
+    "invalid-name"  # C0103
 ]
 
 [tool.flake8]
-max-line-length = 200
-
-[tool.pylint]
 max-line-length = 200
 
 [build-system]
