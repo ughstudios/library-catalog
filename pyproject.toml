@@ -28,6 +28,9 @@ disable = [
     "invalid-name", # C0103   
 ]
 
+[tool.flake8]
+max-line-length = 200
+
 [tool.pylint]
 max-line-length = 200
 
