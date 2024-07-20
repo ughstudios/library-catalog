@@ -1,5 +1,5 @@
 """
-ASGI config for thechannelcompany project.
+ASGI config for library_catalog project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'thechannelcompany.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'library_catalog.settings')
 
 application = get_asgi_application()

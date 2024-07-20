@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from thechannelcompany.models.book import Book
+from library_catalog.models.book import Book
 
 
 class BookSerializer(serializers.ModelSerializer):

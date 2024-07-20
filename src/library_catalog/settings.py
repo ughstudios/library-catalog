@@ -10,7 +10,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True
 ALLOWED_HOSTS: list[str] = []
 
-APP_NAME = 'thechannelcompany'
+APP_NAME = 'library_catalog'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / APP_NAME / 'media'
 CELERY_BROKER_URL = 'redis://localhost:6379/0'

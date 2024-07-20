@@ -1,5 +1,5 @@
 """
-URL configuration for thechannelcompany project.
+URL configuration for library_catalog project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -21,7 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
 
-from thechannelcompany.views.book import BookViewSet
+from library_catalog.views.book import BookViewSet
 
 
 router = DefaultRouter()

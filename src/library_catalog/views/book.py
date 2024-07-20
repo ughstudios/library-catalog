@@ -1,8 +1,8 @@
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.parsers import MultiPartParser, FormParser
 
-from thechannelcompany.models.book import Book
-from thechannelcompany.serializers.book import BookSerializer
+from library_catalog.models.book import Book
+from library_catalog.serializers.book import BookSerializer
 
 
 # pylint: disable=too-few-public-methods

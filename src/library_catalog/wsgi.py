@@ -1,5 +1,5 @@
 """
-WSGI config for thechannelcompany project.
+WSGI config for library_catalog project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'thechannelcompany.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'library_catalog.settings')
 
 application = get_wsgi_application()
